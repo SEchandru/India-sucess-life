@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log_In & Sign_In</title>
+
+    <link rel="stylesheet" href="./boots/bootstrap.min.css">
+    <script src="./boots/jquery.min.js"></script>
+    <script src="./boots/bootstrap.min.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: rgb(111, 201, 201);
+    }
+    .row{
+        background-color: white;
+        width: 100%;
+        height: 100hv;
+        margin-left: 0%;
+        border-radius: 30px;
+        background: linear-gradient(to right,rgb(255, 106, 0),white,rgb(0, 255, 0));
+        margin-top: 100px;
+    }
+    h1,h4{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+    }
+    img{
+        /* border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px; */
+        width: 350px;
+        height: 500px;
+    }
+    #gam{
+        margin-top:20px ;
+        margin-bottom: 20px;
+    }
+    #btn1{
+        border: none;
+        outline: none;
+        height: 50px;
+        font-size: 20px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        border: 2px solid;
+        font-weight: bold;
+        transition: 0.7s;
+    }
+    .india{
+        padding: 10px;
+        /* margin-right: 10%; */
+        /* margin-left: 20px; */
+        text-align: justify;
+        font-size: 15px;
+    }
+    #btn1:hover{
+        background: white;
+        color: black;
+
+    }
+    #jee{
+        margin-top: 15px;
+        margin-left: 50px;
+        /* text-decoration: none; */
+       
+    }
+    #mee{
+        font-size: 25px;
+        color: red;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    span{
+        color: red;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    p::first-letter{
+        font-size: 25px;
+        color: red;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    p{
+        text-indent: 50px;
+        font-weight: 600;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <section class="form my-4 mx-5">
+        <div class="container">
+            <div class="row g-0">
+                <!-- <div class="col-md-2 col-lg-6"> -->
+                <!-- <div class="col-lg-5">
+                    <img src="./images/bmw-1216469__480.jpg" id="logimg" class="img-fluid" alt="">
+                </div> -->
+                <div class="col-lg-7 px-5 pt-5" id="nee">
+                    <h1><span>H</span>era <span>T</span>ech</h1>
+                    <h4>Sign into your account</h4>
+                    <form method="post" name="indiaform" action="./index.html" onsubmit="return validateform()">
+                        <div class="form-row">
+                            <div class="col-lg-7" id="gam">
+                                <input type="email" class="form-control my-3 p-4" placeholder="Enter your Email" name="email" alt="Please Enter the email Id">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7" id="gam">
+                                <input type="password" name="password" class="form-control my-3 p-4" placeholder="Enter your password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <button class="btn btn-warning" id="btn1">Log_In</button>
+                                <br>
+                                <br>
+                                <a href="#" id="jee"><span id="mee">F</span>orget Password</a>
+                                <p>Don't have an account? <a href="#">Register here</a></p>
+                            </div>
+                            </div>
+                        <!-- </div> -->
+                    </form>
+                </div>
+                <br>
+                <h2><span>A</span>ppreciation <span>P</span>oem <span>F</span>or <span>H</span>industan</h2>
+                <div class="india">
+                    <p>India is a culturally rich and diverse country that is widely appreciated for its unique traditions, vibrant festivals, ancient history, and stunning natural beauty. From the majestic Himalayan mountains to the sandy beaches of Goa, India boasts a plethora of tourist attractions that draw visitors from all over the world. The country is also known for its rich heritage of yoga, meditation, and Ayurveda, which have become popular wellness practices globally. Moreover, India is recognized as a major economic powerhouse with a rapidly growing economy, a thriving IT industry, and a diverse range of sectors contributing to its overall development. Despite its challenges, India's resilience, cultural richness, and potential for growth have earned it a place of high appreciation and fascination in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        function validateform(){
+            var x=document.forms["indiaform"]["email"].value;
+            if(x==""||x==null){
+                alert("Name must be filled out");
+                return false
+            }
+        }
+        function validateform(){
+            var x=document.forms["indiaform"]['sevi'].value;
+            if(x==""||x==null){
+                alert("please Enter the password");
+                return true
+            }
+            else{
+                alert("please enter the email");
+                return false
+            }
+        }
+    </script>
+   
+    
+</body>
+</html>

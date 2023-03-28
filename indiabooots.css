@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.q3 a{
+    text-decoration: none;
+    color: black;
+}
+
+#brand{
+    color: red;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* text-shadow: 2px 2px 1px ; */
+    font-size: 30px;
+}
+
+#lo{
+    color: blue;
+}
+body{
+    background:linear-gradient(to right,rgb(255, 81, 0),rgb(246, 246, 246),rgb(6, 255, 6));
+ width: 100vh;
+ font-family: Verdana, sans-serif; margin:0;width: 100%;
+    /* overflow: hidden; */
+}
+#link{
+    margin-right: 20px;
+}
+.menu{
+    height: 100vh;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* #deck{
+    color: rgb(255, 85, 0,.7);
+    transition: 1s;
+}
+#deck:hover{
+    color: rgb(255, 85, 0);
+
+}
+#deck2{
+    color: rgb(26, 255, 0,.7);
+    transition: 1s;
+}
+#deck2:hover{
+    color: rgb(26, 255, 0);
+} */
+.head{
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-top: 65px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:royalblue;
+}
+.head h1::first-letter{
+    font-size: 45px;
+    color: red;
+}
+
+
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  /* background: #f1f1f1f1; */
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  transition: 0.7s;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  /* color: white; */
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    /* background: #ddd; */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+.q1 {font-style: italic;
+    text-transform: capitalize;
+    text-indent:10px;
+    font-weight:700;
+    word-spacing: 5px;
+    line-height: 48px;
+
+}
+.q2{font-style: italic;
+    text-transform: capitalize;
+    text-indent:10px;
+    font-weight:700;
+    word-spacing: 5px;
+    line-height: 35px;
+
+}
+.q3 {font-style: italic;
+    text-transform: capitalize;
+    text-indent:10px;
+    font-weight:700;
+    word-spacing: 5px;
+    line-height:20px;
+    cursor: pointer;
+}
+/* Add a blue color to the author */
+.author {color: rgb(255, 0, 0);
+    font-weight: 700;
+    font-size: 25px;
+
+}
+/* #col1{
+    border:2px solid red;
+    height: 350px;
+    overflow-y: scroll;
+    margin-left: 15px;
+}
+#col1 p{
+    padding: 10px;
+    transition: 0.7s;
+}
+#col1 p:hover{
+    box-shadow: inset 0 2px 5px 2px black;
+}
+#col2{
+    border:2px solid red;
+    height: 350px;
+    margin-left: 15px;
+}
+#col3{
+    border:2px solid red;
+    margin-left: 15px;
+    height: 350px;
+} */
+
+
+
+@media screen and (max-width:768px){
+    .q1{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .q2{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .q3{
+        font-size: 10px;
+    cursor: pointer;
+        line-height: 10px;
+    }
+    .mySlides{
+        padding: 20px;
+    }
+    .prev, .next{
+        position: fixed;
+    }
+    
+ }
